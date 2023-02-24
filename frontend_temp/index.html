@@ -1,57 +1,95 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>datasoup</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
     <!-- mobile devices styles -->
     <link
-      rel="stylesheet"
-      href="https://code.s3.yandex.net/web-code/adaptive.css"
+            rel="stylesheet"
+            href="https://code.s3.yandex.net/web-code/adaptive.css"
     />
-    <link rel="icon" type="image" href="" />
-  </head>
-  <body>
-    <div class="header">
-      <p class="logo">datasoup</p>
-      <!-- <div class="button"></div> -->
+    <link rel="icon" type="image" href=""/>
+</head>
+<body>
+<div class="header">
+    <p class="site-name">datasoup</p>
+    <!-- <div class="button"></div> -->
+</div>
+i
+<!--<img
+  class="image"
+  src=""
+/>
+
+<div class="advice">
+  <span></span>
+  <span class="phrase"></span>
+  <img
+    class="cursor"
+    src=""
+  />
+  </div> -->
+<section class="content">
+    <div class="ozon card">
+        <div class="ozon-card-background">
+            <img
+                    class="card-image"
+                    src="https://docs.ozon.ru/company/images/logo_Ozon_new.png"
+            />
+            <h3 class="card-title"></h3>
+            <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                fermentum vel ante eget consectetur. Nulla imperdiet nibh non nunc
+                cursus, et feugiat enim mollis. Morbi diam felis, mollis vel leo ut,
+                hendrerit varius elit. Sed interdum imperdiet velit a finibus. Donec
+                eget fermentum dolor. Nulla vel tincidunt lectus, id ornare eros.
+                Donec vitae enim vulputate justo vestibulum consectetur.
+            </p>
+            <p><a class='instruction' href="instructions.html">instruction</a></p>
+        </div>
+        <div class="ozon-inputs">
+            <p>Seller token:</p>
+            <input class="ozon-token">
+            <p>Seller ID:</p>
+            <input class="ozon-id">
+        </div>
     </div>
-    i
-    <!--<img
-      class="image"
-      src=""
-    />
-
-    <div class="advice">
-      <span></span>
-      <span class="phrase"></span>
-      <img
-        class="cursor"
-        src=""
-      />
-      </div> -->
-    <section class="main-info">
-      <div class="card no-right-margin">
-        <img
-          class="card-image"
-          src="https://docs.ozon.ru/company/images/logo_Ozon_new.png"
-        />
+    <div class="yandex card">
+        <img class="card-image"
+             src='https://storage.yandexcloud.net/cloud-www-assets/region-assets/ru/light/desktop/logo.svg'>
         <h3 class="card-title"></h3>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          fermentum vel ante eget consectetur. Nulla imperdiet nibh non nunc
-          cursus, et feugiat enim mollis. Morbi diam felis, mollis vel leo ut,
-          hendrerit varius elit. Sed interdum imperdiet velit a finibus. Donec
-          eget fermentum dolor. Nulla vel tincidunt lectus, id ornare eros.
-          Donec vitae enim vulputate justo vestibulum consectetur.
-        </p>
-      </div>
-    </section>
-    <p class="footer">Alexey Sotchenkov</p>
+        <div class="yandex-inputs">
+            <p>Yandex Functions Token:</p>
+            <input class="yandex-func-token">
+            <p>Yandex Triggers Token:</p>
+            <input class="yandex-trig-token">
+            <p>Yandex LockBox Token:</p>
+            <input class="yandex-lockbox-token">
+        </div>
+    </div>
+    <div class="google card">
+        <img class="card-image" src='https://cloud.google.com/images/velostrata/cloud-lockup-logo.png'>
+        <h3 class="card-title"></h3>
+        <div class="google-inputs">
+            <p>Google creds:</p>
+            <input class="google-creds">
+            <p>Table name:</p>>
+            <input class="table-name">
+            <p>Sheet name:</p>>
+            <input class="sheet-name">
+        </div>
+    </div>
+</section>
 
-    <script src="https://code.s3.yandex.net/web-code/smoothly.js"></script>
-    <script src="script.js"></script>
-  </body>
+<div class="footer">
+    <p class="author">Alexey Sotchenkov</p>
+    <img class="logo" src="logo.png">
+</div>
+
+<script src="https://code.s3.yandex.net/web-code/smoothly.js"></script>
+<script src="script.js"></script>
+</body>
 </html>
