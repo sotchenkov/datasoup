@@ -15,8 +15,9 @@ ozon_contents.addEventListener("click", function () {
     ozon_inputs.style.display = 'inline-block';
     document.querySelector('.yandex').style.display = 'inline-block';
     document.querySelector('.google').style.display = 'inline-block';
-    document.querySelector('.instruction').style.display = 'none';
+    // document.querySelector('.instruction').style.display = 'none';
     document.querySelector('.ozon-token').focus();
+    // card.active.style.setProperty("box-shadow", "0px 0px 20px 2px rgba(0, 0, 0, 0.4)")
     is_clicked = true;
   }
   else {

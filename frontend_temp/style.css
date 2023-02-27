@@ -167,9 +167,9 @@ p {
     }
 }
 
-.ozon:active {
-    box-shadow: 0px 0px 100px 0px rgba(25, 107, 255, 0.9);
-}
+/*.ozon:active {*/
+/*    box-shadow: 0px 0px 100px 0px rgba(25, 107, 255, 0.9);*/
+/*}*/
 
 .card-title {
     color: black;
@@ -210,4 +210,45 @@ a:active {
     color: black;
     background-color: transparent;
     text-decoration: none;
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    transition: 180ms box-shadow ease-in-out;
+}
+
+input:focus{
+    outline: 3px solid transparent;
+}
+
+.ozon-id:focus, .ozon-token:focus {
+    border-color: rgba(25, 107, 255, 0.7);
+    box-shadow: 0 0 0 2px rgba(25, 107, 255, 0.7);
+}
+
+.yandex-func-token:focus, .yandex-lockbox-token:focus, .yandex-trig-token:focus{
+    border-color: rgba(252, 202, 0, 0.7);
+    box-shadow: 0 0 0 2px rgba(252, 202, 0, 0.7);
+}
+
+.google-creds:focus, .table-name:focus, .sheet-name:focus{
+    border-color: rgba(52, 168, 83, 0.7);
+    box-shadow: 0 0 0 2px rgba(52, 168, 83, 0.7);
+}
+
+.ya.card-image{
+    margin-top: 38px;
+    margin-bottom: 36px;
+}
+
+.go.card-image{
+    margin-top: 38px;
+    margin-bottom: 29px;
+}
+
+.instruction{
+    margin-top: 100px;
 }
