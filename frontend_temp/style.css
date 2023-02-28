@@ -46,19 +46,29 @@ p {
     text-align: center;
 }
 
+.buutton-container{
+    justify-content: center;
+    display: flex;
+}
+
 .button {
-    width: 130px;
+    position: absolute;
+    bottom: 27px;
+    display: none;
+    color: black;
+    width: 160px;
     height: 40px;
     padding-top: 10px;
     box-sizing: border-box;
-    border: 1px solid white;
+    border: 1px solid black;
     text-align: center;
     font-size: 14px;
     cursor: pointer;
     transition: opacity 0.2s;
+    animation: showBlock 0.5s linear forwards;
 }
 
-.button:hover {
+.buutton-container:hover {
     opacity: 0.5;
 }
 
@@ -76,8 +86,8 @@ p {
 }
 
 .footer {
-
-    /*display: inline-block;*/
+    /*align-items: center;*/
+    /*display: flex;*/
 }
 
 .logo {
@@ -128,7 +138,7 @@ p {
 /*    height: 200px;*/
 /*}*/
 
-.ozon:hover {
+.ozon-like-btn:hover {
     #opacity: 0.2;
     box-shadow: 0px 0px 20px 2px rgba(25, 107, 255, 0.9);
     filter: grayscale(0%);
@@ -151,11 +161,11 @@ p {
 }
 
 .yandex {
-    animation: showBlock 0.7s linear forwards;
+    animation: showBlock 0.5s linear forwards;
 }
 
 .google {
-    animation: showBlock 0.7s linear forwards;
+    animation: showBlock 0.5s linear forwards;
 }
 
 @keyframes showBlock {
@@ -167,9 +177,9 @@ p {
     }
 }
 
-/*.ozon:active {*/
-/*    box-shadow: 0px 0px 100px 0px rgba(25, 107, 255, 0.9);*/
-/*}*/
+.ozon:active {
+    box-shadow: 0px 0px 100px 0px rgba(25, 107, 255, 0.9);
+}
 
 .card-title {
     color: black;
@@ -181,7 +191,7 @@ p {
 .card-text {
     color: #000;
     font-size: 16px;
-    animation: hideBlock 2s linear forwards;
+    animation: showBlock 0.5s linear forwards;
 }
 
 .card-image{
@@ -250,5 +260,7 @@ input:focus{
 }
 
 .instruction{
-    margin-top: 100px;
+    right: 50px;
+    bottom: 30px;
+    position: absolute;
 }
