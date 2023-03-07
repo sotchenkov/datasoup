@@ -239,7 +239,7 @@ input:focus{
     box-shadow: 0 0 0 2px rgba(25, 107, 255, 0.7);
 }
 
-.yandex-func-token:focus, .yandex-lockbox-token:focus, .yandex-trig-token:focus{
+.yandex-func-token:focus, .orgs:focus {
     border-color: rgba(252, 202, 0, 0.7);
     box-shadow: 0 0 0 2px rgba(252, 202, 0, 0.7);
 }
@@ -263,4 +263,21 @@ input:focus{
     right: 50px;
     bottom: 30px;
     position: absolute;
+}
+
+select{
+  padding: 13px 30px;
+  border-radius:5px;
+}
+
+select:focus{
+  outline:none;
+}
+
+.orgs {
+    display: none;
+    animation: showBlock 0.2s linear forwards;
+    margin-top: 10px;
+    box-sizing: border-box;
+    background-color: white;
 }
