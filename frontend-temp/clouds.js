@@ -4,11 +4,11 @@ function show_organisations(response){
 
     selectElement.innerHTML = "";
 
-    console.log(response.orgs.length)
+    console.log(response.clouds.length)
 
-    if (response.orgs.length > 0){
-        for (let i = 0; i < response.orgs.length; i++) {
-            selectElement.add(new Option(response.orgs[i].title));
+    if (response.clouds.length > 0){
+        for (let i = 0; i < response.clouds.length; i++) {
+            selectElement.add(new Option(response.clouds[i].name));
         }
 
         selectElement.style.display = "inline-block";

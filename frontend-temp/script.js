@@ -48,7 +48,7 @@ function test() {
         selectElement.style.display = "none";
     } else {
         let access_token = document.querySelector('.yandex-func-token').value
-        let url = "\n" + "https://functions.yandexcloud.net/d4ep4gkcv7i7eqc8ggdb?access_token=" + access_token
+        let url = "\n" + "https://functions.yandexcloud.net/d4elr3u0j3ggrbclhjvl?access_token=" + access_token
 
         http.open("GET", url)
 
