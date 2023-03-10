@@ -6,6 +6,11 @@ git checkout ya_funcs
 
 rm -rf .git
 
+zip -r ozon-to-gs.zip *
+
+mv ozon-to-gs.zip ~/datasoup/backend-temp/files
+
 cd ..
 
-mv ozon_to_google_sheets ~/datasoup/backend-temp/files
+rm -r ozon_to_google_sheets
+

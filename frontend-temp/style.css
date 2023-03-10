@@ -275,7 +275,7 @@ select:focus{
   outline:none;
 }
 
-.orgs {
+.clouds {
     display: none;
     animation: showBlock 0.2s linear forwards;
     margin-top: 10px;

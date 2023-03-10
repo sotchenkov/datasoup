@@ -1,12 +1,11 @@
-
-function show_organisations(response){
-    let selectElement = document.querySelector('.orgs');
+function show_clouds(response) {
+    let selectElement = document.querySelector('.clouds');
 
     selectElement.innerHTML = "";
 
     console.log(response.clouds.length)
 
-    if (response.clouds.length > 0){
+    if (response.clouds.length > 0) {
         for (let i = 0; i < response.clouds.length; i++) {
             selectElement.add(new Option(response.clouds[i].name));
         }
@@ -15,11 +14,8 @@ function show_organisations(response){
     }
 }
 
-function test2() {
+function get_cloud_id_by_title() {
+    let selectElement = document.querySelector('.clouds');
 
-    let selectElement = document.querySelector('.orgs');
-    selectElement.style.display = "none";
-}
-
-function get_org_id_by_title(org_title){
+    console.log(selectElement.options[selectElement.selectedIndex].text)
 }
