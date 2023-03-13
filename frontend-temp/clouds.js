@@ -3,8 +3,6 @@ function show_clouds(response) {
 
     selectElement.innerHTML = "";
 
-    console.log(response.clouds.length)
-
     if (response.clouds.length > 0) {
         for (let i = 0; i < response.clouds.length; i++) {
             selectElement.add(new Option(response.clouds[i].name));
@@ -12,10 +10,17 @@ function show_clouds(response) {
 
         selectElement.style.display = "inline-block";
     }
+    test(response.clouds)
 }
 
-function get_cloud_id_by_title() {
+function get_cloud_id_by_title(cloud) {
     let selectElement = document.querySelector('.clouds');
 
-    console.log(selectElement.options[selectElement.selectedIndex].text)
+    for (let i = 0; i < cloud.length; i++) {
+        if (cloud[i]['name'] === selectElement.options[selectElement.selectedIndex].text){
+
+            return cloud[i]['id']
+        }
+    }
+
 }

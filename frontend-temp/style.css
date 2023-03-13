@@ -72,6 +72,10 @@ p {
     opacity: 0.5;
 }
 
+.button:active{
+    border: 2px solid black;
+}
+
 .image {
     width: 80%;
     display: block;
