@@ -7,6 +7,8 @@ yc serverless function allow-unauthenticated-invoke --name ozon-to-google-sheets
   --format json \
   >&2
 
+sleep 5
+
 yc serverless trigger create timer --name ozon-time-trigger \
   --token ${1} \
   --cloud-id ${2} \

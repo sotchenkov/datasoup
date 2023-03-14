@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Orchestrates function creation scripts
 
 set -e

@@ -8,7 +8,7 @@ yc serverless function version create \
   --runtime python311 \
   --entrypoint main.py \
   --memory 128M \
-  --execution-timeout 3s \
+  --execution-timeout 5s \
   --package-bucket-name ozon-script \
   --package-object-name ozon-to-gs.zip \
   --environment OZON_TOKEN=${3} \

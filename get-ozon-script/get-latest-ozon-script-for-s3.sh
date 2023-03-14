@@ -4,13 +4,12 @@ cd ozon_to_google_sheets
 
 git checkout ya_funcs
 
-rm -rf .git
+rm -rf .git LICENSE README.md .gitignore
 
 zip -r ozon-to-gs.zip *
 
-mv ozon-to-gs.zip ~/datasoup/backend-temp/files
+mv ozon-to-gs.zip ..
 
 cd ..
 
 rm -r ozon_to_google_sheets
-
