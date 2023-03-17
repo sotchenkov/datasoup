@@ -1,18 +1,18 @@
 let clouds = '';
+
 function get_clouds() {
-    let selectElement = document.querySelector('.clouds');
-    const isEmpty = str => !str.trim().length;
-
-    if (isEmpty(document.querySelector(".yandex-oauth-token").value)) {
-        selectElement.style.display = "none";
-    } else {
-        let access_token = document.querySelector('.yandex-oauth-token').value;
-        let url = "https://functions.yandexcloud.net/d4e5l1tnkjo9f2jr6cs9?oauth_token=" + access_token;
-
-        request(url, function(response){
-            show_clouds(response)
-        })
-    }
+    // let selectElement = document.querySelector('.clouds');
+    //
+    // if (isEmpty(document.querySelector(".yandex-oauth-token").value)) {
+    //     selectElement.style.display = "none";
+    // } else {
+    //     let access_token = document.querySelector('.yandex-oauth-token').value;
+    //     let url = "https://functions.yandexcloud.net/d4e5l1tnkjo9f2jr6cs9?oauth_token=" + access_token;
+    //
+    //     request(url, function(response){
+    //         show_clouds(response)
+    //     })
+    // }
 }
 
 function show_clouds(response) {

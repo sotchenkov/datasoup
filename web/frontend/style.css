@@ -32,17 +32,17 @@ p {
     color: black;
 }
 
-select{
-  width: 100%;
-  padding: 13px;
-  border-radius:5px;
+select {
+    width: 100%;
+    padding: 13px;
+    border-radius: 5px;
 }
 
-select:focus{
-  outline:none;
+select:focus {
+    outline: none;
 }
 
-input{
+input {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -50,8 +50,13 @@ input{
     transition: 180ms box-shadow ease-in-out;
 }
 
-input:focus{
+input:focus {
     outline: 3px solid transparent;
+}
+
+input:invalid {
+    background-color: rgba(255, 0, 0, 0.2);
+    animation: shake 0.5s ease-in-out 0s 1;
 }
 
 a:link {
@@ -120,7 +125,7 @@ a:active {
     animation: showBlock 0.5s linear forwards;
 }
 
-.card-image{
+.card-image {
     width: 100%;
 }
 
@@ -142,14 +147,14 @@ a:active {
 
 .ozon-id:focus, .ozon-token:focus {
     border-color: rgba(25, 107, 255, 0.7);
-    box-shadow: 0 0 0 2px rgba(25, 107, 255, 0.7);
+    box-shadow: 0 0 0 1px rgba(25, 107, 255, 0.7);
 }
 
-.oz.card-image{
+.oz.card-image {
     margin-bottom: 23px;
 }
 
-.instruction{
+.instruction {
     right: 50px;
     bottom: 30px;
     position: absolute;
@@ -165,12 +170,12 @@ a:active {
     filter: grayscale(0%);
 }
 
-.yandex-oauth-token:focus, .orgs:focus {
+.yandex-oauth-token:focus, .clouds:focus {
     border-color: rgba(252, 202, 0, 0.7);
-    box-shadow: 0 0 0 2px rgba(252, 202, 0, 0.7);
+    box-shadow: 0 0 0 1px rgba(252, 202, 0, 0.7);
 }
 
-.ya.card-image{
+.ya.card-image {
     margin-top: 38px;
     margin-bottom: 60px;
 }
@@ -193,17 +198,17 @@ a:active {
     filter: grayscale(0%);
 }
 
-.google-creds:focus, .table-name:focus, .sheet-name:focus{
+.google-creds:focus, .google-table-name:focus, .google-sheet-name:focus {
     border-color: rgba(52, 168, 83, 0.7);
-    box-shadow: 0 0 0 2px rgba(52, 168, 83, 0.7);
+    box-shadow: 0 0 0 1px rgba(52, 168, 83, 0.7);
 }
 
-.go.card-image{
+.go.card-image {
     margin-top: 38px;
     margin-bottom: 50px;
 }
 
-.button-container{
+.button-container {
     justify-content: center;
     display: flex;
 }
@@ -229,7 +234,7 @@ a:active {
     opacity: 0.5;
 }
 
-.button:active{
+.button:active {
     border: 2px solid black;
 }
 
@@ -249,11 +254,38 @@ a:active {
     display: inline-block;
 }
 
+.soup-animation {
+    margin: auto;
+    bottom: 0;
+    display: none;
+}
+
 @keyframes showBlock {
     0% {
         opacity: 0;
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(2em);
+    }
+    40% {
+        transform: translate(-2em);
+    }
+    60% {
+        transform: translate(2em);
+    }
+    80% {
+        transform: translate(-2em);
+    }
+    100% {
+        transform: translate(0);
     }
 }
