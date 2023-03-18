@@ -216,7 +216,7 @@ a:active {
 .button {
     position: absolute;
     bottom: 27px;
-    display: none;
+    /*display: none;*/
     color: black;
     width: 160px;
     height: 40px;
@@ -254,11 +254,70 @@ a:active {
     display: inline-block;
 }
 
-.soup-animation {
-    margin: auto;
-    bottom: 0;
+.deploying {
     display: none;
+    margin: auto;
+    animation: showBlock 0.5s linear forwards;
 }
+
+.logs {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 450px;
+    width: 90%;
+    scrollbar-width: thin;
+    padding: 0 3%;
+    margin: 4% auto;
+}
+
+.logs::-webkit-scrollbar-track
+{
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+    background-color: #FFF;
+}
+
+.logs::-webkit-scrollbar
+{
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+.logs::-webkit-scrollbar-thumb
+{
+    background-color: #000000;
+    border-radius: 100px;
+}
+
+.animations {
+    height: 200px
+}
+
+.anim {
+    width: 20%;
+    margin: auto;
+}
+
+lottie-player {
+    --lottie-player-toolbar-height: 0px;
+}
+
+.error{
+    padding-top: 45px;
+    width: 8%;
+}
+
+.donation{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 20px;
+    width: 10%;
+    animation: showBlock 0.5s linear forwards;
+}
+
 
 @keyframes showBlock {
     0% {

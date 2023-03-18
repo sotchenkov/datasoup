@@ -93,5 +93,5 @@ inputs.forEach(function (elem) {
 button.addEventListener('click', function () {
     hide_all_cards();
     make_deploy();
-    document.querySelector('.soup-animation').style.display = 'inline-block'
+    document.querySelector('.deploying').style.display = 'block'
 });

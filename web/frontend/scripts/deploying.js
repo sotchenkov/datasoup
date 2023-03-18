@@ -19,4 +19,26 @@ function make_deploy() {
     // request(url, function(response){
     //     console.log(response)
     // })
+    setTimeout(success_checker, 2000, {"info": "OK"})
+    setTimeout(success_checker, 8000, {"info": "BAD"})
+}
+
+function success_checker(response) {
+    // alert('im called')
+    if (response.info === "OK") {
+        document.querySelector('.soup').style.display = 'none';
+        document.querySelector('.done').style.display = 'block';
+        document.querySelector('.done').innerHTML = '<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_lp7qD9RDx1.json" background="transparent" speed="1" autoplay ></lottie-player>';
+        setTimeout(show_donation, 2000)
+    } else {
+        document.querySelector('.done').style.display = 'none'
+        document.querySelector('.donation').style.display = 'none'
+        // document.querySelector('.soup').style.display = 'none';
+        document.querySelector('.error').innerHTML = '<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_yw3nyrsv.json"  background="transparent"  speed="1" autoplay></lottie-player>'
+    }
+}
+
+function show_donation(){
+    document.querySelector('.donation').innerHTML = '<lottie-player src="https://assets2.lottiefiles.com/packages/lf20_gICLST7SLO.json"  background="transparent" speed="1" autoplay></lottie-player></div>'
+    document.querySelector('.donation').style.display = 'block'
 }
