@@ -318,6 +318,12 @@ lottie-player {
     animation: showBlock 0.5s linear forwards;
 }
 
+#firstLottie {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
 
 @keyframes showBlock {
     0% {
