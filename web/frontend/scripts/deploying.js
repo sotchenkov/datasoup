@@ -19,11 +19,23 @@ function make_deploy() {
     // request(url, function(response){
     //     console.log(response)
     // })
-    setTimeout(success_checker, 2000, {"info": "OK"})
+    log_writer()
+    // setTimeout(success_checker, 8000, {"info": "BAD"})
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function log_writer() {
+    let output = document.querySelector('.deploying-process');
+    output.append("Some text... \n");
+    output.scrollIntoView({block: "end"});
+    success_checker({"info": "OK"})
     setTimeout(success_checker, 8000, {"info": "BAD"})
 }
 
-function success_checker(response) {
+async function success_checker(response) {
     // alert('im called')
     if (response.info === "OK") {
         document.querySelector('.soup').style.display = 'none';
@@ -35,10 +47,13 @@ function success_checker(response) {
         document.querySelector('.donation').style.display = 'none'
         // document.querySelector('.soup').style.display = 'none';
         document.querySelector('.error').innerHTML = '<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_yw3nyrsv.json"  background="transparent"  speed="1" autoplay></lottie-player>'
+        await sleep(2000).then(() => {
+            document.querySelector('.error-text').innerHTML = '<p>ERROR: smth error code + smth error text :)</p>';
+        });
     }
 }
 
-function show_donation(){
+function show_donation() {
     document.querySelector('.donation').innerHTML = '<lottie-player src="https://assets2.lottiefiles.com/packages/lf20_gICLST7SLO.json"  background="transparent" speed="1" autoplay></lottie-player></div>'
     document.querySelector('.donation').style.display = 'block'
 }

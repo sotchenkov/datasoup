@@ -154,10 +154,14 @@ a:active {
     margin-bottom: 23px;
 }
 
-.instruction {
+.instruction-link {
     right: 50px;
     bottom: 30px;
     position: absolute;
+}
+
+.instruction-link:link{
+    text-decoration: underline;
 }
 
 .yandex {
@@ -261,8 +265,10 @@ a:active {
 }
 
 .logs {
+    min-width: 800px;
     overflow-x: hidden;
     overflow-y: auto;
+    scroll-behavior: smooth;
     height: 450px;
     width: 90%;
     scrollbar-width: thin;
@@ -306,6 +312,12 @@ lottie-player {
     width: 8%;
 }
 
+.error-text{
+    margin-top: 20px;
+    text-align: center;
+    animation: showBlock 1s linear forwards;
+}
+
 .donation{
     display: none;
     position: absolute;
@@ -322,6 +334,17 @@ lottie-player {
     top: 0;
     left: 0;
     position: absolute;
+    z-index: -1;
+    animation: showBlock 0.5s linear forwards;
+}
+
+.instruction-md{
+    padding: 20px;
+    border: 2px solid black;
+    width: 60%;
+    text-align: center;
+    margin: 80px auto 80px auto;
+    backdrop-filter: blur(5px);
 }
 
 
