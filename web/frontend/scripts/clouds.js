@@ -26,7 +26,8 @@ function show_clouds(response) {
         }
 
         selectElement.style.display = "inline-block";
-    }
+    } else document.querySelector('.empty-clouds').style.display = 'block'
+
     clouds = response.clouds
 }
 

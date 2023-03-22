@@ -192,6 +192,13 @@ a:active {
     background-color: white;
 }
 
+.empty-clouds {
+    font-size: 14px;
+    text-align: center;
+    display: none;
+    animation: showBlock 0.5s linear forwards;
+}
+
 .google {
     display: none;
     animation: showBlock 0.5s linear forwards;

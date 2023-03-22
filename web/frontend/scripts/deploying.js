@@ -45,7 +45,6 @@ async function success_checker(response) {
     } else {
         document.querySelector('.done').style.display = 'none'
         document.querySelector('.donation').style.display = 'none'
-        // document.querySelector('.soup').style.display = 'none';
         document.querySelector('.error').innerHTML = '<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_yw3nyrsv.json"  background="transparent"  speed="1" autoplay></lottie-player>'
         await sleep(2000).then(() => {
             document.querySelector('.error-text').innerHTML = '<p>ERROR: smth error code + smth error text :)</p>';

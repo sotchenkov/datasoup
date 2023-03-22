@@ -39,7 +39,7 @@
             <input type="password" placeholder="Seller Token" class="ozon-token"
                    onkeydown="focusNext(event, '.ozon-id')">
             <input type="text" placeholder="Seller ID" class="ozon-id"
-                   onkeydown="focusNext(event, '.yandex-oauth-token')" pattern="^[ 0-9]+$">
+                   onkeydown="focusNext(event, '.yandex-oauth-token')" pattern="^[ 0-9]+$" title="Must be integer">
         </div>
         <p><a class='instruction-link' href="instructions.html" target="_blank">instruction</a></p>
 
@@ -51,13 +51,14 @@
         </a>
         <div class="yandex-inputs">
             <input type="password" placeholder="Yandex OAuth Token" class="yandex-oauth-token" oninput="get_clouds()"
-                   onkeydown="focusNext(event, '.clouds')" pattern="\S{58}" title="3 letter Password">
+                   onkeydown="focusNext(event, '.clouds')" pattern="\S{58}" title="Oauth token">
         </div>
         <div class="dropout-clouds-yc">
             <select class="clouds" name="clouds" id="clouds" onkeydown="focusNext(event, '.google-creds')">
                 <option value="">Choose organisation</option>
             </select>
         </div>
+        <div class="empty-clouds"><p>У вас нет доступных облаков. Пожалуйста, создайте облако :)</p></div>
     </div>
     <div class="google card">
         <a href="https://console.cloud.google.com/" target="_blank">
