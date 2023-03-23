@@ -67,7 +67,7 @@ card.addEventListener("click", function (event) {
     } else if (is_clicked && name === "DIV") {
         document.querySelector('.yandex').style.display = 'none';
         document.querySelector('.google').style.display = 'none';
-        document.querySelector('.instruction').style.display = '';
+        document.querySelector('.instruction-link').style.display = '';
         card_text.style.display = "inline-block";
         ozon_inputs.style.display = 'none';
 

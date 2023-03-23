@@ -121,6 +121,7 @@ a:active {
 
 .card-text {
     color: #000;
+    line-height: 1.5;
     font-size: 16px;
     animation: showBlock 0.5s linear forwards;
 }
@@ -160,7 +161,7 @@ a:active {
     position: absolute;
 }
 
-.instruction-link:link{
+.instruction-link:link, .ozon-text-link:link{
     text-decoration: underline;
 }
 
